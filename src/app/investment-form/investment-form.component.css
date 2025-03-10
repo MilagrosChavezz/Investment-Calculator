@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+form {
+    padding: 1rem;
+    max-width: 40rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #307e6c, #2b996d);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; 
+  }
+  
+  .form-group {
+    display: flex;
+  flex-direction: column;
+  flex: 1 1 45%; 
+  align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(226, 229, 232);
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #76c0ae;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: #c2e9e0;
+    font-size: 1rem;
+    
+  }
+
+  .form-actions{
+    width: 90%;
+   display: flex;
+   justify-content: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #76c0ae;
+    border-radius: 0.25rem;
+    background-color: #83e6c0;
+    color: #1a1f1d;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+  }
+  
+  button:hover {
+    background-color: #aaf1d6;
+  }
+
+  @media screen and (max-width: 768px) {
+    label {
+    
+      font-size: 0.7rem;
+      
+    }
+  input {
+    width: 80%;
+    font-size: 0.6rem;
+    
+  }
+  }

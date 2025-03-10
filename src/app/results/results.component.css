@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.table-container{
+    color: aliceblue;
+    display:flex;
+    justify-content: center;
+  
+}
+
+.table-header th{
+    color:#2b996d;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.results td {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #cce1c1; 
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  }
+
+  .no-results{
+    color: #2b996d;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .table-container {
+      padding: 0 10px;
+    }
+    
+    .table-header th {
+      font-size: 0.6rem;
+      padding: 0.5rem;
+    }
+    
+    .results td {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+    
+    .no-results {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+@if (annualData && annualData.length > 0) {
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr class="table-header">
+          <th>Year</th>
+          <th>Interest Earned</th>
+          <th>Value End of Year</th>
+          <th>Annual Investment</th>
+          <th>Total Interest</th>
+          <th>Total Amount Invested</th>
+        </tr>
+      </thead>
+      <tbody class="results">
+        @for (data of annualData; track data.year) {
+          <tr>
+            <td>{{ data.year }}</td>
+            <td>{{ data.interest.toFixed(2) | currency  }}</td>
+            <td>{{ data.valueEndOfYear.toFixed(2)| currency }}</td>
+            <td>{{ data.annualInvestment.toFixed(2)| currency }}</td>
+            <td>{{ data.totalInterest.toFixed(2) | currency}}</td>
+            <td>{{ data.totalAmountInvested.toFixed(2)| currency }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+} @else {
+  <div class="no-results">
+    <p>There are no results to display.</p>
+  </div>
+}

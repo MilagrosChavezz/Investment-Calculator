@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<app-investment-form (results)="showResults($event)"></app-investment-form>
+
+@if(isCalculated){
+    <app-results [annualData]="annualData"></app-results>
+}
